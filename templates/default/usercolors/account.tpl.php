@@ -18,18 +18,36 @@
                 </div>
                 <div class="col-md-4">
                     <input type="color" name="background_color"
-                        value="<?= $user->colors['bg'] || '#ffffff' ?>" />
+                        value="<?= $user->colors['bg'] ? $user->colors['bg'] : '#ffffff' ?>" />
                 </div>
                 <div class="col-md-2">
                 </div>
             </div>
 
 
-            <p>Highlights (text on background, mainly)<input type="color" name="highlight_color"
-                value="<?= $user->colors['hilite'] || '#000000' ?>" /></p>
+            <div class="row">
+                <div class="col-md-2">
+                    <label class="control-label" for="highlight_color">Highlights (text on background, mainly)</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="color" name="highlight_color"
+                        value="<?= $user->colors['hilite'] ? $user->colors['hilite'] : '#000000' ?>" />
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
 
-            <p>Links: <input type="color" name="link_color"
-                value="<?= $user->colors['link'] || '' ?>" /></p>
+            <div class="row">
+                <div class="col-md-2">
+                    <label class="control-label" for="highlight_color">Links</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="color" name="link_color"
+                        value="<?= $user->colors['link'] ? $user->colors['link'] : '' ?>" />
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
 
             <div class="controls-save">
                 <button type="submit" class="btn btn-primary">Save updates</button>
