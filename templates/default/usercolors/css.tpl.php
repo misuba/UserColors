@@ -16,6 +16,11 @@
         border-color: <?= $vars['user']->colors['hilite'] ?>;
         color: <?= $vars['user']->colors['link'] ?>;
     }
+    .pager li > a:hover, .pager li > a:focus {
+        background-color: <?= $vars['user']->colors['hilite'] ?>;
+        border-color: <?= $vars['user']->colors['bg'] ?>;
+        color: <?= $vars['user']->colors['link'] ?>;
+    }
     -->
     </style>
 <?php } ?>
