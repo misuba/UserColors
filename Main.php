@@ -9,6 +9,8 @@
                 \Idno\Core\site()->template()->extendTemplate('account/menu/items', 'usercolors/menu');
 
                 \Idno\Core\site()->addPageHandler('account/usercolors/?','IdnoPlugins\UserColors\Pages\Account');
+
+                \Idno\Core\site()->template()->prependTemplate('entity/user/profile', 'usercolors/css');
             }
         }
 
