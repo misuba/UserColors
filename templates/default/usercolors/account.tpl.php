@@ -1,3 +1,6 @@
+<?php
+    $user = \Idno\Core\site()->session()->currentUser();
+?>
 <div class="row">
 
     <div class="col-md-10 col-md-offset-1">
@@ -15,7 +18,7 @@
                 </div>
                 <div class="col-md-4">
                     <input type="color" name="background_color"
-                        value="<?= $vars['background_color'] || '#fff' ?>" />
+                        value="<?= $user->colors['bg'] || '#ffffff' ?>" />
                 </div>
                 <div class="col-md-2">
                 </div>
@@ -23,10 +26,10 @@
 
 
             <p>Highlights (text on background, mainly)<input type="color" name="highlight_color"
-                value="<?= $vars['highlight_color'] || '#000' ?>" /></p>
+                value="<?= $user->colors['hilite'] || '#000000' ?>" /></p>
 
             <p>Links: <input type="color" name="link_color"
-                value="<?= $vars['link_color'] || '' ?>" /></p>
+                value="<?= $user->colors['link'] || '' ?>" /></p>
 
             <div class="controls-save">
                 <button type="submit" class="btn btn-primary">Save updates</button>
