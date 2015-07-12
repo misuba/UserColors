@@ -1,5 +1,5 @@
 # UserColors
-A Known plugin for multi-user installs - let users choose the colors on their profile pages!
+A [Known](http://github.com/idno/Known) plugin for multi-user installs - let users choose the colors on their profile pages!
 
 ### Caveats
 May perform weirdly under themes that diverge sufficiently from default.
