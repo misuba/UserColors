@@ -10,7 +10,7 @@
 
                 \Idno\Core\site()->addPageHandler('account/usercolors/?','IdnoPlugins\UserColors\Pages\Account');
 
-                \Idno\Core\site()->template()->prependTemplate('entity/user/profile', 'usercolors/css');
+                \Idno\Core\site()->template()->prependTemplate('entity/feed', 'usercolors/css');
             }
         }
 

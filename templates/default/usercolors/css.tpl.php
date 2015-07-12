@@ -1,12 +1,15 @@
-<?php
-    $user = \Idno\Core\site()->session()->currentUser();
-?>
-<?= var_dump($vars['user']) ?>
-<style type="text/css">
-<!--
-
-<?= $user->colors['bg'] ?>
-
-
--->
-</style>
+<?php if ($vars['user'] && $vars['user']->colors) { ?>
+    <style type="text/css">
+    <!--
+    body {
+        background-color: <?= $vars['user']->colors['bg'] ?>;
+    }
+    .highlightedText {
+        color: <?= $vars['user']->colors['hilite'] ?>;
+    }
+    .idno-entry a {
+        color: <?= $vars['user']->colors['link'] ?>;
+    }
+    -->
+    </style>
+<?php } ?>
