@@ -7,7 +7,7 @@
     .highlightedText {
         color: <?= $vars['user']->colors['hilite'] ?>;
     }
-    .idno-entry a {
+    .profile a, .idno-entry a, .idno-object .permalink a, .pager li > a {
         color: <?= $vars['user']->colors['link'] ?>;
     }
     -->
